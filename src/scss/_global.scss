@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+
+    font-family: "Oswald", "Arial", "Tahoma", "Verdana", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
