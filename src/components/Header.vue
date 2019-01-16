@@ -9,7 +9,19 @@
         <div :class="{'header__hamberger': true, 'header__hamberger-open': showMenu === true}"></div>
       </div>
 
-      <ul :class="{'header__list': true, 'header__list--hidden': !showMenu }">
+      <ul
+        class="header__list--mobile"
+        :class="{'header__list': true, 'header__list--open': showMenu === true}"
+      >
+        <li class="header__item" v-for="item in items">
+          <a href class="header__link">
+            {{ item }}
+            <span v-for="i in 4"></span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="header__list header__list--hidden">
         <li class="header__item" v-for="item in items">
           <a href class="header__link">
             {{ item }}
@@ -43,7 +55,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../scss/style.scss";
+
 .header {
+  height: 7.5rem;
   background-image: radial-gradient(
       50% 30% ellipse at center top,
       #201e40 0%,
@@ -51,6 +65,10 @@ export default {
     ),
     radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
   background-attachment: fixed;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
   &__menu {
     position: relative;
     padding: 2rem;
@@ -71,6 +89,42 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
+    z-index: 500;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+    }
+
+    &--mobile {
+      background-image: radial-gradient(
+          50% 30% ellipse at center top,
+          #201e40 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        radial-gradient(
+          60% 50% ellipse at center bottom,
+          #261226 0%,
+          #100a1c 100%
+        );
+      margin: 0 -2rem;
+      transform: translateY(-400px);
+      transition: all ease-in-out 1s;
+      a {
+        opacity: 0;
+        transition: all ease-out 0.2s;
+      }
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &--open {
+      transform: translateY(0px);
+      a {
+        opacity: 1;
+      }
+    }
 
     &--hidden {
       display: none;
@@ -83,6 +137,8 @@ export default {
   }
   &__logo {
     width: 195px;
+    position: relative;
+    z-index: 1000;
   }
   &__holder {
     cursor: pointer;
@@ -97,7 +153,7 @@ export default {
   &__link {
     position: relative;
     height: 4rem;
-    min-width: 10rem;
+    min-width: 14rem;
     display: block;
     color: $color_orange;
     line-height: 40px;
@@ -105,11 +161,11 @@ export default {
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
-    z-index: 50;
 
     @media (min-width: $tablet-width) {
       font-size: 1rem;
       min-width: 9rem;
+      z-index: 100;
     }
     @media (min-width: $desktop-width) {
       font-size: 1.4rem;
@@ -125,10 +181,10 @@ export default {
       width: 25%;
       height: 100%;
       background-color: $color_orange;
-      z-index: -1;
       transform-origin: top;
       transform: scaleY(0);
       transition: transform 0.5s;
+      z-index: -1;
     }
 
     &:hover {
@@ -160,6 +216,7 @@ export default {
   }
 
   &__hamberger {
+    z-index: 1000;
     display: block;
     cursor: pointer;
     height: 0.2rem;
@@ -194,6 +251,7 @@ export default {
     }
 
     &-open {
+      //z-index: 1000;
       transform: translate(-50%, -50%) rotate(135deg);
       &::before {
         top: 0;
