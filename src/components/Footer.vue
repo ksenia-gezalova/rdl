@@ -34,12 +34,7 @@ export default {
 .footer {
   @import "../scss/style.scss";
   position: relative;
-  background-image: radial-gradient(
-      50% 30% ellipse at center top,
-      #201e40 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-image: $color_dark;
   background-attachment: fixed;
   margin: 0;
   overflow: hidden;

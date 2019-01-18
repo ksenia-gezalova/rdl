@@ -3,6 +3,7 @@
     <Banner></Banner>
     <!-- <Feedback></Feedback> -->
     <Team></Team>
+    <Slider></Slider>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Feedback from "./Feedback.vue";
 import Banner from "./Banner.vue";
 import Team from "./Team.vue";
+import Slider from "./Slider";
 
 export default {
   name: "Main",
   components: {
     Feedback,
     Banner,
-    Team
+    Team,
+    Slider
   }
 };
 </script>
