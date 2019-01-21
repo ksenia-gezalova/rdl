@@ -3,8 +3,8 @@
     <article class="banner__block">
       <div class="banner__bg-video">
         <video class="banner__bg-video-content" autoplay muted loop>
-          <!-- <source src="../assets/Under.mp4" type="video/mp4">
-          <source src="../assets/Under.webm" type="video/webm">-->
+          <!--<source src="../assets/Under.mp4" type="video/mp4">-->
+          <source src="Under1.webm" type="video/webm">
           Your browser is not supported!
         </video>
       </div>

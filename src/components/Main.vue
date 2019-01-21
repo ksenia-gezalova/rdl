@@ -2,24 +2,33 @@
   <div class="main">
     <Banner></Banner>
     <!-- <Feedback></Feedback> -->
-    <Team></Team>
+    <About></About>
     <Slider></Slider>
+    <Team></Team>
+    <Paper></Paper>
+    <Partner></Partner>
   </div>
 </template>
 
 <script>
-import Feedback from "./Feedback.vue";
-import Banner from "./Banner.vue";
-import Team from "./Team.vue";
+// import Feedback from "./Feedback.vue";
+import Banner from "./Banner";
+import About from "./About";
+import Team from "./Team";
 import Slider from "./Slider";
+import Paper from "./Paper";
+import Partner from "./Partner";
 
 export default {
   name: "Main",
   components: {
-    Feedback,
+    //Feedback,
     Banner,
+    About,
     Team,
-    Slider
+    Slider,
+    Paper,
+    Partner
   }
 };
 </script>

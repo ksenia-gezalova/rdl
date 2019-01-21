@@ -65,6 +65,7 @@ export default {
     ),
     radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
   background-attachment: fixed;
+  border-bottom: 1px solid $color_orange;
 
   @media (min-width: $tablet-width) {
     height: auto;

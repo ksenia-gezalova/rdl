@@ -72,4 +72,28 @@ h1 {
     text-align: center;
     font-weight: 300;
     text-transform: uppercase;
+    margin: auto;
+    position: relative;
+    width: max-content;
+    color: $color_lightorange;
+    padding: 2rem;
+    &::before {
+        content: '___';
+        position: absolute;
+        display: block;
+        bottom: 1rem;
+        left: 2.1rem;
+        font-size: 3rem;
+        width: 2rem;
+        height: 2rem;
+
+        @media (max-width: $tablet-width) {
+            bottom: 2rem;
+            left: 8rem;
+        }
+    }
+    @media (max-width: $tablet-width) {
+        max-width: 90%;
+        line-height: 3rem;
+    }
 }
