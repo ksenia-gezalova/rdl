@@ -38,7 +38,7 @@ export default {
   background-attachment: fixed;
   margin: 0;
   overflow: hidden;
-  color: $color_orange;
+  color: $color_dark;
   padding-top: 2rem;
   padding-bottom: 4rem;
   @media (min-width: $tablet-width) {
@@ -46,6 +46,7 @@ export default {
     background-color: $color_dark;
   }
   @media (min-width: $desktop-width) {
+    font-size: 1.8rem;
     padding: 0;
   }
   &__row {
@@ -55,14 +56,17 @@ export default {
     }
   }
   &__title {
-    color: $color_orange;
+    color: $color_white;
     text-transform: uppercase;
     margin-bottom: 0.8rem;
     font-weight: 300;
     font-size: 1.6rem;
+    @media (min-width: $desktop-width) {
+      font-size: 1.8rem;
+    }
   }
   &__tel {
-    color: $color_white;
+    color: $color_grey;
     margin-bottom: 0.3rem;
     text-decoration: underline;
     font-size: 1.4rem;
@@ -75,26 +79,28 @@ export default {
     }
   }
   span {
-    color: $color_orange;
+    color: $color_lightorange;
     @media (min-width: $desktop-width) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
   &__address {
     padding-bottom: 2rem;
     font-size: 1.2rem;
+    color: $color_lightorange;
     @media (min-width: $tablet-width) {
       padding-bottom: 0;
     }
     @media (min-width: $desktop-width) {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
   &__mail {
     text-transform: lowercase;
-    color: $color_white;
+    color: $color_grey;
     text-decoration: underline;
     border-bottom: 1px solid transparent;
+    font-weight: 300;
 
     &:hover {
       border-bottom: 1px solid $color_lightorange;
@@ -112,18 +118,9 @@ export default {
     }
   }
   &__card {
-    padding: 0 2rem;
-    background-image: radial-gradient(
-        50% 30% ellipse at center top,
-        #201e40 0%,
-        rgba(0, 0, 0, 0) 100%
-      ),
-      radial-gradient(
-        60% 50% ellipse at center bottom,
-        #261226 0%,
-        #100a1c 100%
-      );
-    background-attachment: fixed;
+    padding: 2rem;
+    padding-bottom: 0;
+    background-color: $color_dark;
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
@@ -133,7 +130,6 @@ export default {
     @media (min-width: $desktop-width) {
       position: absolute;
       z-index: 20;
-      background-color: $color_dark;
       padding: 2rem 0;
       border-radius: 0.1rem;
       box-shadow: 0 0 1.5rem rgba($color_dark, 0.5);

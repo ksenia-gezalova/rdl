@@ -3,9 +3,8 @@
     <article class="banner__block">
       <div class="banner__bg-video">
         <video class="banner__bg-video-content" autoplay muted loop>
-          <!--<source src="../assets/Under.mp4" type="video/mp4">-->
-          <source src="Under1.webm" type="video/webm">
-          Your browser is not supported!
+          <source src="1.mp4" type="video/mp4">
+          <source src="Under1.webm" type="video/webm">Your browser is not supported!
         </video>
       </div>
       <div
@@ -78,10 +77,10 @@ export default {
       "IT решения для транспорта",
       "бесперебойный доступ",
       "доступ к мультимедийному контенту",
-      "Интернет в пути",
-      "Высокоскоростной интернет для поездов",
+      "интернет в пути",
+      "высокоскоростной интернет для поездов",
       "уникальные системы оффлайн авторизации",
-      "Доступ в интернет в движении"
+      "доступ в интернет в движении"
     ];
 
     setTimeout(() => {
@@ -115,6 +114,7 @@ export default {
     z-index: -1;
     opacity: 0.95;
     overflow: hidden;
+    height: 100vh;
     &-content {
       height: 100%;
       width: 100%;
@@ -125,7 +125,7 @@ export default {
   &__text {
     font-family: "Roboto Mono", monospace;
     position: absolute;
-    top: 12rem;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -133,15 +133,14 @@ export default {
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 1.2rem;
-    width: 80%;
+    width: max-content;
+    font-size: 2rem;
+    background-color: rgba(18, 23, 36, 0.9);
+    padding: 3rem;
 
-    @media (min-width: $tablet-width) {
-      top: 30vh;
-      font-size: 1.8rem;
-    }
     @media (min-width: $desktop-width) {
       top: 50%;
-      font-size: 2.8rem;
+      font-size: 3rem;
     }
   }
 }

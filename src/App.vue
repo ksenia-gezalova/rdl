@@ -31,6 +31,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>

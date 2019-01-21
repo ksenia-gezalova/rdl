@@ -2,7 +2,7 @@
   <div class="header">
     <header class="header__menu">
       <a href class="header__link-logo">
-        <img src="../assets/RDL.png" alt="Logo RDL-Telecom" class="header__logo">
+        <img src="../assets/RDL.svg" alt="Logo RDL-Telecom" class="header__logo">
       </a>
 
       <div class="header__holder" @click="showMenu=!showMenu">
@@ -58,15 +58,8 @@ export default {
 
 .header {
   height: 7.5rem;
-  background-image: radial-gradient(
-      50% 30% ellipse at center top,
-      #201e40 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
-  background-attachment: fixed;
-  border-bottom: 1px solid $color_orange;
-
+  background: $color_white;
+  border-bottom: 0.2rem solid $color_orange;
   @media (min-width: $tablet-width) {
     height: auto;
   }
@@ -91,22 +84,11 @@ export default {
     align-items: center;
     margin-top: 1.5rem;
     z-index: 500;
-
     @media (min-width: $tablet-width) {
       margin-top: 0;
     }
-
     &--mobile {
-      background-image: radial-gradient(
-          50% 30% ellipse at center top,
-          #201e40 0%,
-          rgba(0, 0, 0, 0) 100%
-        ),
-        radial-gradient(
-          60% 50% ellipse at center bottom,
-          #261226 0%,
-          #100a1c 100%
-        );
+      background: $color_white;
       margin: 0 -2rem;
       transform: translateY(-400px);
       transition: all ease-in-out 1s;
@@ -114,19 +96,16 @@ export default {
         opacity: 0;
         transition: all ease-out 0.2s;
       }
-
       @media (min-width: $tablet-width) {
         display: none;
       }
     }
-
     &--open {
       transform: translateY(0px);
       a {
         opacity: 1;
       }
     }
-
     &--hidden {
       display: none;
       @media (min-width: $tablet-width) {
@@ -156,13 +135,13 @@ export default {
     height: 4rem;
     min-width: 14rem;
     display: block;
-    color: $color_orange;
+    color: $color_dark;
     line-height: 40px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
-
+    font-weight: 700;
     @media (min-width: $tablet-width) {
       font-size: 1rem;
       min-width: 9rem;
@@ -172,25 +151,21 @@ export default {
       font-size: 1.4rem;
       min-width: 14rem;
     }
-
     &:visited {
-      color: $color_orange;
+      color: $color_dark;
     }
-
     span {
       position: absolute;
       width: 25%;
       height: 100%;
-      background-color: $color_orange;
+      background-color: $color_lightorange;
       transform-origin: top;
       transform: scaleY(0);
       transition: transform 0.5s;
       z-index: -1;
     }
-
     &:hover {
       color: $color_white;
-
       span {
         transform-origin: bottom;
         transform: scaleY(1);
@@ -215,7 +190,6 @@ export default {
       }
     }
   }
-
   &__hamberger {
     z-index: 1000;
     display: block;
@@ -226,7 +200,7 @@ export default {
     top: 3.5rem;
     right: 5%;
     border-radius: 50px;
-    background-color: $color_white;
+    background-color: $color_dark;
     transform: translate(-50%, -50%) rotate(0deg);
     transition: all ease 0.5s;
     &::before,
@@ -250,9 +224,8 @@ export default {
       right: 0;
       transform-origin: right;
     }
-
     &-open {
-      //z-index: 1000;
+      // z-index: 1000;
       transform: translate(-50%, -50%) rotate(135deg);
       &::before {
         top: 0;
@@ -263,7 +236,6 @@ export default {
         transform: translateX(-100%) rotate(-90deg);
       }
     }
-
     @media (min-width: $tablet-width) {
       display: none;
     }
