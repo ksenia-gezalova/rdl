@@ -14,9 +14,9 @@
         :class="{'header__list': true, 'header__list--open': showMenu === true}"
       >
         <li class="header__item" v-for="item in items">
-          <a href class="header__link">
+          <a :href="`#${item}`" class="header__link">
             {{ item }}
-            <span v-for="i in 4"></span>
+            <span v-for="j in 4"></span>
           </a>
         </li>
       </ul>
@@ -25,7 +25,7 @@
         <li class="header__item" v-for="item in items">
           <a href class="header__link">
             {{ item }}
-            <span v-for="i in 4"></span>
+            <span v-for="j in 4"></span>
           </a>
         </li>
       </ul>

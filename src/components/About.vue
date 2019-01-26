@@ -66,6 +66,10 @@ export default {
     grid-gap: 5rem;
     text-align: center;
 
+     @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(3, 1fr);
     }
