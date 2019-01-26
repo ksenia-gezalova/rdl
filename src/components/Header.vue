@@ -2,7 +2,7 @@
   <div class="header">
     <header class="header__menu">
       <a href class="header__link-logo">
-        <img src="../assets/RDL.svg" alt="Logo RDL-Telecom" class="header__logo">
+        <img src="../assets/RDL_Telecom_logo.svg" alt="Logo RDL-Telecom" class="header__logo">
       </a>
 
       <div class="header__holder" @click="showMenu=!showMenu">
