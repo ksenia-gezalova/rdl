@@ -55,7 +55,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../scss/style.scss";
-
 .header {
   height: 7.5rem;
   background: $color_white;

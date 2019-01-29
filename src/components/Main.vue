@@ -3,10 +3,11 @@
     <Banner></Banner>
     <!-- <Feedback></Feedback> -->
     <About></About>
-    <Slider></Slider>
-    <Team></Team>
+    <!-- <Slider></Slider> -->
+    <!-- <Team></Team> -->
     <Paper></Paper>
-    <Partner></Partner>
+    <!-- <Partner></Partner> -->
+    <Work></Work>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Team from "./Team";
 import Slider from "./Slider";
 import Paper from "./Paper";
 import Partner from "./Partner";
+import Work from "./Work";
 
 export default {
   name: "Main",
@@ -28,7 +30,8 @@ export default {
     Team,
     Slider,
     Paper,
-    Partner
+    Partner,
+    Work
   }
 };
 </script>

@@ -2,14 +2,16 @@
   <div class="banner">
     <article class="banner__block">
       <div class="banner__bg-video">
-        <video class="banner__bg-video-content" autoplay muted loop>
-          <source src="1.mp4" type="video/mp4">
-          <source src="Under1.webm" type="video/webm">Your browser is not supported!
+        <video class="banner__bg-video-content banner__bg-video-content--small" autoplay muted loop>
+          <source src="main.mp4" type="video/mp4">
+          <source src="main-small.webm" type="video/webm">Your browser is not supported!
+        </video>
+        <video class="banner__bg-video-content banner__bg-video-content--big" autoplay muted loop>
+          <source src="main.mp4" type="video/mp4" media="(min-width: 768px)">
+          <source src="main.webm" type="video/webm">Your browser is not supported!
         </video>
       </div>
-      <div
-        class="banner__text"
-      >IT решения для транспорта: доступ к мультимедийному контенту и Интернету в пути.</div>
+      <div class="banner__text">IT решения для транспорта</div>
     </article>
   </div>
 </template>
@@ -51,7 +53,7 @@ export default {
             complete++;
             output += to;
           } else if (this.frame >= start) {
-            if (!char || Math.random() < 0.28) {
+            if (!char || Math.random() < 0.18) {
               char = this.randomChar();
               this.queue[i].char = char;
             }
@@ -107,7 +109,7 @@ export default {
   &__bg-video {
     background-color: $color_dark;
     position: relative;
-    top: 0;
+    top: 5rem;
     left: 0;
     height: 100%;
     width: 100%;
@@ -119,6 +121,19 @@ export default {
       height: 100%;
       width: 100%;
       object-fit: cover;
+
+      &--small {
+        @media (min-width: $tablet-width) {
+          display: none;
+        }
+      }
+
+      &--big {
+        display: none;
+        @media (min-width: $tablet-width) {
+          display: block;
+        }
+      }
     }
   }
 
@@ -129,18 +144,23 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: $color_white;
+    color: $color_orange;
     font-weight: 300;
     letter-spacing: 1px;
-    font-size: 1.2rem;
-    width: max-content;
+    font-size: 5rem;
+    width: 30rem;
     font-size: 2rem;
-    background-color: rgba(18, 23, 36, 0.9);
+    //    background-color: rgba(18, 23, 36, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 3rem;
+
+    @media (min-width: $tablet-width) {
+      width: max-content;
+    }
 
     @media (min-width: $desktop-width) {
       top: 50%;
-      font-size: 3rem;
+      font-size: 6rem;
     }
   }
 }
@@ -148,6 +168,3 @@ export default {
   color: #757575;
 }
 </style>
-
-
-
