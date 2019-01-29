@@ -2,7 +2,13 @@
   <div class="banner">
     <article class="banner__block">
       <div class="banner__bg-video">
-        <video class="banner__bg-video-content banner__bg-video-content--small" autoplay muted loop>
+        <video
+          class="banner__bg-video-content banner__bg-video-content--small"
+          autoplay
+          muted
+          loop
+          poster="../../public/moment.jpg"
+        >
           <source src="main.mp4" type="video/mp4">
           <source src="main-small.webm" type="video/webm">Your browser is not supported!
         </video>
@@ -108,6 +114,8 @@ export default {
 .banner {
   &__bg-video {
     background-color: $color_dark;
+    background-image: url("../../public/moment.jpg");
+    background-size: cover;
     position: relative;
     top: 5rem;
     left: 0;

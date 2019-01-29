@@ -2,7 +2,7 @@
   <div class="header">
     <header class="header__menu">
       <a href class="header__link-logo">
-        <img src="../assets/RDL.svg" alt="Logo RDL-Telecom" class="header__logo">
+        <img src="../assets/RDL_Telecom_logo.svg" alt="Logo RDL-Telecom" class="header__logo">
       </a>
 
       <div class="header__holder" @click="showMenu=!showMenu">
@@ -14,19 +14,19 @@
         :class="{'header__list': true, 'header__list--open': showMenu === true}"
       >
         <li class="header__item" v-for="item in items">
-          <a href class="header__link">
-            {{ item }}
-            <span v-for="i in 4"></span>
-          </a>
+          <router-link :to="item.link" class="header__link">
+            {{ item.name }}
+            <span v-for="j in 4"></span>
+          </router-link>
         </li>
       </ul>
 
       <ul class="header__list header__list--hidden">
         <li class="header__item" v-for="item in items">
-          <a href class="header__link">
-            {{ item }}
-            <span v-for="i in 4"></span>
-          </a>
+          <router-link :to="item.link" class="header__link">
+            {{ item.name }}
+            <span v-for="j in 4"></span>
+          </router-link>
         </li>
       </ul>
     </header>
@@ -39,12 +39,30 @@ export default {
   data() {
     return {
       items: [
-        "Главная",
-        "О компании",
-        "Наша команда",
-        "Проекты",
-        "Вакансии",
-        "Контакты"
+        {
+          name: "Главная",
+          link: "/"
+        },
+        {
+          name: "О нас",
+          link: "/company"
+        },
+        {
+          name: "Команда",
+          link: "/team"
+        },
+        {
+          name: "Проекты",
+          link: "/projects"
+        },
+        {
+          name: "Вакансии",
+          link: "/vacant"
+        },
+        {
+          name: "Контакты",
+          link: "/contacts"
+        }
       ],
       showMenu: false
     };

@@ -3,11 +3,11 @@
     <Banner></Banner>
     <!-- <Feedback></Feedback> -->
     <About></About>
-    <!-- <Slider></Slider> -->
-    <!-- <Team></Team> -->
+    <Slider></Slider>
+    <Team></Team>
     <Paper></Paper>
-    <!-- <Partner></Partner> -->
     <Work></Work>
+    <Partner></Partner>
   </div>
 </template>
 

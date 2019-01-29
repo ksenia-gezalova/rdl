@@ -34,16 +34,14 @@ export default {
 .footer {
   @import "../scss/style.scss";
   position: relative;
-  background-image: $color_dark;
   background-attachment: fixed;
   margin: 0;
   overflow: hidden;
   color: $color_dark;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  background-color: $color_white;
+  border-top: .2rem solid $color_orange;
   @media (min-width: $tablet-width) {
     font-size: 1.4rem;
-    background-color: $color_dark;
   }
   @media (min-width: $desktop-width) {
     font-size: 1.8rem;
@@ -75,11 +73,11 @@ export default {
     border-bottom: 1px solid transparent;
 
     &:hover {
-      border-bottom: 1px solid $color_lightorange;
+      border-bottom: .1rem solid $color_lightorange;
     }
   }
   span {
-    color: $color_lightorange;
+    color: $color_white;
     @media (min-width: $desktop-width) {
       font-size: 1.2rem;
     }
@@ -87,7 +85,7 @@ export default {
   &__address {
     padding-bottom: 2rem;
     font-size: 1.2rem;
-    color: $color_lightorange;
+    color: $color_white;
     @media (min-width: $tablet-width) {
       padding-bottom: 0;
     }
@@ -103,7 +101,7 @@ export default {
     font-weight: 300;
 
     &:hover {
-      border-bottom: 1px solid $color_lightorange;
+      border-bottom: .1rem solid $color_lightorange;
     }
   }
   &__map {
@@ -120,7 +118,7 @@ export default {
   &__card {
     padding: 2rem;
     padding-bottom: 0;
-    background-color: $color_dark;
+    background-color: $color_blue;
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
