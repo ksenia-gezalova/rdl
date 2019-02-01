@@ -39,7 +39,7 @@ export default {
   overflow: hidden;
   color: $color_dark;
   background-color: $color_white;
-  border-top: .2rem solid $color_orange;
+  border-top: 0.2rem solid $color_orange;
   @media (min-width: $tablet-width) {
     font-size: 1.4rem;
   }
@@ -73,7 +73,7 @@ export default {
     border-bottom: 1px solid transparent;
 
     &:hover {
-      border-bottom: .1rem solid $color_lightorange;
+      border-bottom: 0.1rem solid $color_lightorange;
     }
   }
   span {
@@ -101,7 +101,7 @@ export default {
     font-weight: 300;
 
     &:hover {
-      border-bottom: .1rem solid $color_lightorange;
+      border-bottom: 0.1rem solid $color_lightorange;
     }
   }
   &__map {
@@ -118,7 +118,7 @@ export default {
   &__card {
     padding: 2rem;
     padding-bottom: 0;
-    background-color: $color_blue;
+    background-color: rgba(18, 23, 36, 0.8);
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;

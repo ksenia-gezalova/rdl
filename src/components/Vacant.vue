@@ -40,7 +40,7 @@ export default {
     align-items: center;
     text-align: center;
     padding: 0 2rem;
-    background-color: rgba(18, 23, 36, 0.9);
+    background-color: rgba(18, 23, 36, 0.75);
 
     h2 {
       display: block;

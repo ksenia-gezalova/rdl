@@ -22,8 +22,10 @@ export default {
   color: $color_white;
 
   &__content {
-    width: 80%;
+    width: 100%;
     margin: auto;
+    text-align: center;
+    padding: 0 2rem;
   }
 
   &__link {

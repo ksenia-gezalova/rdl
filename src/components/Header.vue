@@ -170,6 +170,7 @@ export default {
     }
     &:visited {
       color: $color_dark;
+      border-bottom: 0.2rem solid $color_orange;
     }
     span {
       position: absolute;
