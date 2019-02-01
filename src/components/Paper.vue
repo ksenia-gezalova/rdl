@@ -1,30 +1,54 @@
 <template>
   <div class="paper">
     <h1 class="paper__title">Лицензии и сертификаты</h1>
-    <carousel-3d :autoplay="true" :autoplay-timeout="2400" style="height: 40vh !important;">
+    <carousel-3d :autoplay="true" :autoplay-timeout="2400" style="height: 75vh !important;">
       <slide :index="0" class="paper__slide">
-        <img src="https://res.cloudinary.com/ameo/image/upload/v1498843587/kTcPaQR_x77hor.jpg">
+        <img src="license/1.jpg">
       </slide>
       <slide :index="1" class="paper__slide">
-        <img src="https://unsplash.it/400/300?image=456">
+        <img src="license/2.jpg">
       </slide>
       <slide :index="2" class="paper__slide">
-        <img src="https://unsplash.it/400/300?image=222">
+        <img src="license/3.jpg">
       </slide>
       <slide :index="3" class="paper__slide">
-        <img src="https://unsplash.it/400/300?image=1003">
+        <img src="license/4.jpg">
       </slide>
       <slide :index="4" class="paper__slide">
-        <img src="https://unsplash.it/400/300?image=940">
+        <img src="license/5.jpg">
       </slide>
       <slide :index="5" class="paper__slide">
-        <img src="https://unsplash.it/400/300?image=944">
+        <img src="license/6.jpg">
       </slide>
       <slide :index="6" class="paper__slide">
-        <img src="https://source.unsplash.com/mEr7U5yfYt8/400x300">
+        <img src="license/7.jpg">
       </slide>
       <slide :index="7" class="paper__slide">
-        <img src="https://unsplash.it/400/300?image=1041">
+        <img src="license/8.jpg">
+      </slide>
+      <slide :index="8" class="paper__slide">
+        <img src="license/9.jpg">
+      </slide>
+      <slide :index="9" class="paper__slide">
+        <img src="license/10.jpg">
+      </slide>
+      <slide :index="10" class="paper__slide">
+        <img src="license/11.jpg">
+      </slide>
+      <slide :index="11" class="paper__slide">
+        <img src="license/12.jpg">
+      </slide>
+      <slide :index="12" class="paper__slide">
+        <img src="license/13.jpg">
+      </slide>
+      <slide :index="13" class="paper__slide">
+        <img src="license/14.jpg">
+      </slide>
+      <slide :index="14" class="paper__slide">
+        <img src="license/15.jpg">
+      </slide>
+      <slide :index="15" class="paper__slide">
+        <img src="license/16.jpg">
       </slide>
     </carousel-3d>
   </div>
@@ -43,7 +67,7 @@ export default {
   name: "Paper",
   data() {
     return {
-      slides: 6
+      slides: 15
     };
   },
   components: {
