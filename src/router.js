@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Main from './components/Main';
 import Vacant from './components/Vacant.vue';
 import Company from './components/Company.vue';
+import Contacts from './components/Contacts.vue';
 
 
 Vue.use(Router);
@@ -23,6 +24,11 @@ const router = new Router({
             name: 'company',
             component: Company
         },
+        {
+            path: '/contacts',
+            name: 'contacts',
+            component: Contacts
+        }
     ]
 });
 
