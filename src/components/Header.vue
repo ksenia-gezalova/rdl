@@ -136,6 +136,10 @@ export default {
     width: 195px;
     position: relative;
     z-index: 1000;
+
+    @media (min-width: $desktop-width) {
+      width: 23.5rem;
+    }
   }
   &__holder {
     cursor: pointer;

@@ -2,7 +2,48 @@
   <div class="contacts">
     <div class="contacts__banner">
       <h2>Контакты</h2>
-      <p>Мы всегда готовы предоставить дополнительную информацию, откликнуться на пожелания и рассмотреть предложения о сотрудничестве. Свяжитесь с нами, и мы ответим в ближайшее время, ведь мы получаем ваши письма даже в поездах.</p>
+      <p>Наша компания всегда готова предоставить дополнительную информацию и рассмотреть предложения о сотрудничестве. Свяжитесь с нами, и мы ответим в ближайшее время, ведь мы получаем ваши письма даже в поездах.</p>
+    </div>
+    <div class="contacts__body">
+      <div class="contacts__block">
+        <h2>Адрес</h2>
+        <p>
+          <a href="tel:88005559730" class="contacts__tel">8 800 555-97-30</a>
+          <br>
+          <a href="tel:84999638484" class="contacts__tel">8 499 963-84-84</a>
+          <br>
+          <span>звонок по России бесплатный</span>
+          <br>
+          <a href="mailto:support@rdl-telecom.com" class="contacts__mail">support@rdl-telecom.com</a>
+          <br>
+          <br>
+          <span class="contacts__address">Россия, г. Москва,
+            <br>проезд Завода Серп и Молот д.6, корп. 1
+          </span>
+        </p>
+      </div>
+      <div class="contacts__block">
+        <h2>ТЕХПОДДЕРЖКА</h2>
+        <p>
+          <a href="tel:88005559730" class="contacts__tel">8 800 555-97-30</a>
+          <br>
+          <a href="tel:84999638484" class="contacts__tel">8 499 963-84-84</a>
+          <br>
+          <span>звонок по России бесплатный</span>
+          <br>
+          <a href="mailto:support@rdl-telecom.com" class="contacts__mail">support@rdl-telecom.com</a>
+        </p>
+      </div>
+      <div class="contacts__block">
+        <h2>Рекизиты</h2>
+        <p>ООО "РДЛ-Тедеком"
+          <br>Юридический адрес: 127000, г. Москва,
+          <br>проезд Завода Серп и Молот д.6, корп. 1
+          <br>ИНН 0000000000
+          <br>КПП 000000000
+          <br>Р/С 00000000000000000000 в Северо-Западный банк ПАО Сбербанк
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -49,12 +90,53 @@ export default {
     p {
       margin-bottom: 2rem;
       color: $color_grey;
+      max-width: 100rem;
 
       @media (min-width: $tablet-width) {
         font-size: 2rem;
         line-height: 3rem;
       }
     }
+  }
+
+  &__body {
+    color: $color_dark;
+    padding: 5rem;
+    line-height: 2.3rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color_white;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__block {
+    h2 {
+      color: $color_orange;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  a {
+    display: inline-block;
+    color: $color_blue;
+    font-weight: bold;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid $color_lightorange_2;
+    }
+  }
+
+  &__address {
+    display: block;
+    color: $color_blue;
+    font-weight: bold;
   }
 }
 </style>

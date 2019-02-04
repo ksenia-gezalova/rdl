@@ -47,7 +47,8 @@ export default {
         new Partner("logos/tele2.jpg", false),
         new Partner("logos/telia.jpg", false),
         new Partner("logos/ttk.png", false),
-        new Partner("logos/velcom.jpg", false)
+        new Partner("logos/velcom.jpg", false),
+        new Partner("logos/wave.jpg", false)
       ]
     };
   },

@@ -44,6 +44,10 @@ img {
     height: auto;
 }
 
+.img {
+    width: auto;
+}
+
 .page-layout {
     max-width: 320px;
     margin-left: auto;
@@ -77,6 +81,7 @@ h1 {
     width: max-content;
     color: $color_lightorange;
     padding: 2rem;
+
     &::before {
         content: '___';
         position: absolute;
@@ -92,6 +97,7 @@ h1 {
             left: 8rem;
         }
     }
+
     @media (max-width: $tablet-width) {
         max-width: 90%;
         line-height: 3rem;
