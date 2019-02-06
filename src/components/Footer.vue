@@ -5,13 +5,11 @@
         <div class="footer__row">
           <h2 class="footer__title">Контакты</h2>
           <p class="footer__text">
-            <a href="tel:88005559730" class="footer__tel">8 800 555-97-30</a>
-            <a href="tel:84999638484" class="footer__tel">8 499 963-84-84</a>
-            <span>звонок по России бесплатный</span>
+            <a href="tel:84999638083" class="footer__tel">8-499-963-80-83</a>
           </p>
         </div>
         <div class="footer__row">
-          <a href="mailto:support@rdl-telecom.com" class="footer__mail">support@rdl-telecom.com</a>
+          <a href="mailto:info@rdl-telecom.com" class="footer__mail">info@rdl-telecom.com</a>
           <br>
           <p class="footer__address">Россия, г. Москва,
             <br>проезд Завода Серп и Молот д.6, корп. 1
@@ -19,7 +17,16 @@
         </div>
       </div>
     </div>
-    <div class="footer__map" id="map"></div>
+    <div class="footer__map" id="map">
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.2858185504297!2d37.6959314162543!3d55.75353698055356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54aa4a0849bb9%3A0x9644b1ace9a5db27!2z0L_RgC4g0JfQsNCy0L7QtNCwINCh0LXRgNC_INC4INCc0L7Qu9C-0YIsIDYg0LrQvtGA0L_Rg9GBIDEsINCc0L7RgdC60LLQsCwgMTExMjUw!5e0!3m2!1sru!2sru!4v1549466124012"
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>-->
+    </div>
   </footer>
 </template>
 
@@ -31,6 +38,9 @@ export default {
 
 
 <style lang="scss" scoped>
+.place-card {
+  display: none !important;
+}
 .footer {
   @import "../scss/style.scss";
   position: relative;
@@ -107,6 +117,8 @@ export default {
   &__map {
     margin: 0;
     height: 362px;
+    background-image: url("../../public/map.jpg");
+    background-position: center;
     @media (min-width: $tablet-width) {
       height: 396px;
     }

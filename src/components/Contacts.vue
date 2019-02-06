@@ -8,40 +8,71 @@
       <div class="contacts__block">
         <h2>Адрес</h2>
         <p>
-          <a href="tel:88005559730" class="contacts__tel">8 800 555-97-30</a>
+          <a href="tel:84999638083" class="contacts__tel">8-499-963-80-83</a>
           <br>
-          <a href="tel:84999638484" class="contacts__tel">8 499 963-84-84</a>
-          <br>
-          <span>звонок по России бесплатный</span>
-          <br>
-          <a href="mailto:support@rdl-telecom.com" class="contacts__mail">support@rdl-telecom.com</a>
+          <a href="mailto:info@rdl-telecom.com" class="contacts__mail">info@rdl-telecom.com</a>
           <br>
           <br>
-          <span class="contacts__address">Россия, г. Москва,
-            <br>проезд Завода Серп и Молот д.6, корп. 1
-          </span>
+          <b>Юридический адрес:</b>
+          <br>105082, г. Москва, Рубцовская набережная, д. 3,
+          стр. 3, пом. I, комн. 25
+          <br>
+          <b>Почтовый адрес:</b>
+          <br>111250, г. Москва, проезд Завода «Серп и Молот», д. 6, корп. 1
+          <br>
+          <b>Фактический адрес:</b>
+          <br>111250, г. Москва, проезд Завода «Серп и Молот», д. 6, корп. 1
+          <br>
+          <b>ИНН/КПП:</b>
+          <br>7701386450/ 770101001
+          <br>
+          <b>ОГРН:</b>
+          <br>1147746112040
+          <br>
+          <b>ОКВЭД:</b>
+          <br>62.01
         </p>
       </div>
       <div class="contacts__block">
-        <h2>ТЕХПОДДЕРЖКА</h2>
+        <h2>Банковские реквизиты:</h2>
         <p>
-          <a href="tel:88005559730" class="contacts__tel">8 800 555-97-30</a>
+          <b>ООО "РДЛ-Тедеком"</b>
           <br>
-          <a href="tel:84999638484" class="contacts__tel">8 499 963-84-84</a>
           <br>
-          <span>звонок по России бесплатный</span>
+          <b>Расчетный счет:</b>
+          <br>40702810300008827000
           <br>
-          <a href="mailto:support@rdl-telecom.com" class="contacts__mail">support@rdl-telecom.com</a>
+          <b>Наименование банка:</b>
+          <br>КБ «ЛОКО-Банк» (АО) г. Москва
+          <br>
+          <b>Адрес банка:</b>
+          <br>125167, г. Москва, ул. Ленинградский проспект, д. 39, стр. 80
+          <br>
+          <b>Корреспондентский счет:</b>
+          <br>30101810945250000161
+          <br>
+          <b>БИК:</b>
+          <br>044525161
+        </p>
+        <p>Наименование компании ООО "РДЛ-Телеком"
+          <br>Генеральный директор: Крекотень Евгений Владимирович (на основании Устава)
         </p>
       </div>
       <div class="contacts__block">
-        <h2>Рекизиты</h2>
-        <p>ООО "РДЛ-Тедеком"
-          <br>Юридический адрес: 105082, г. Москва,
-          <br>Рубцовская набережная, д.3, пом. I, комн. 25
-          <br>ИНН 7701386450
-          <br>КПП 770101001
-          <br>Р/С 40702810300008827000 в КБ "ЛОКО-Банк" (АО)
+        <br>
+        <h2>ТЕХПОДДЕРЖКА</h2>
+        <p>Телефон службы поддержки:
+          <br>
+          <a href="tel:84999638075" class="contacts__tel">8-499-963-80-75</a>
+          <br>Служба поддержки:
+          <br>
+          <a href="tel:88005112622" class="contacts__tel">8-800-511-26-22*</a>
+          <br>
+          <a href="tel:88005115377" class="contacts__tel">8-800-511-53-77*</a>
+          <br>
+          <span>*звонок по России бесплатный</span>
+          <br>
+          <a href="mailto:helpdesk@rdl-telecom.com" class="contacts__mail">helpdesk@rdl-telecom.com</a>
         </p>
       </div>
     </div>

@@ -47,14 +47,14 @@ export default {
           name: "О нас",
           link: "/company"
         },
-        {
+        /* {
           name: "Команда",
           link: "/team"
-        },
-        {
+        }, */
+        /* {
           name: "Проекты",
           link: "/projects"
-        },
+        }, */
         {
           name: "Вакансии",
           link: "/vacant"
@@ -77,6 +77,9 @@ export default {
   height: 7.5rem;
   background: $color_white;
   border-bottom: 0.2rem solid $color_orange;
+  z-index: 5000;
+  position: fixed;
+  width: 100%;
   @media (min-width: $tablet-width) {
     height: auto;
   }
@@ -100,24 +103,26 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
-    z-index: 500;
+    //z-index: 500;
     @media (min-width: $tablet-width) {
       margin-top: 0;
     }
     &--mobile {
+      height: 0;
       background: $color_white;
       margin: 0 -2rem;
       transform: translateY(-400px);
       transition: all ease-in-out 1s;
       a {
         opacity: 0;
-        transition: all ease-out 0.2s;
+        transition: all ease-out 0s;
       }
       @media (min-width: $tablet-width) {
         display: none;
       }
     }
     &--open {
+      height: auto;
       transform: translateY(0px);
       a {
         opacity: 1;
@@ -247,7 +252,7 @@ export default {
       transform-origin: right;
     }
     &-open {
-      // z-index: 1000;
+      //z-index: 1000;
       transform: translate(-50%, -50%) rotate(135deg);
       &::before {
         top: 0;

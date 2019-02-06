@@ -3,7 +3,7 @@
     <Banner></Banner>
     <!-- <Feedback></Feedback> -->
     <About></About>
-    <Slider></Slider>
+    <!-- <Slider></Slider> -->
     <Team></Team>
     <Paper></Paper>
     <Work></Work>

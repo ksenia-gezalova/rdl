@@ -45,7 +45,8 @@ export default {
         "license/13.jpg",
         "license/14.jpg",
         "license/15.jpg",
-        "license/16.jpg"
+        "license/16.jpg",
+        "license/17.jpg"
       ]
     };
   },
@@ -114,10 +115,10 @@ export default {
   &__gallery {
     padding: 3rem 1rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 
     @media (min-width: $tablet-width) {
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(9, 1fr);
     }
   }
 

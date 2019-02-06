@@ -50,6 +50,9 @@
       <slide :index="15" class="paper__slide">
         <img src="license/16.jpg" v-on:dblclick="showBig()">
       </slide>
+      <slide :index="16" class="paper__slide">
+        <img src="license/17.jpg" v-on:dblclick="showBig()">
+      </slide>
     </carousel-3d>
     <div class="paper__block">
       <router-link to="/company">Подробнее</router-link>
@@ -70,7 +73,7 @@ export default {
   name: "Paper",
   data() {
     return {
-      slides: 15
+      slides: 16
     };
   },
   components: {
