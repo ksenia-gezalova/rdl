@@ -22,9 +22,13 @@ export default {
   background: $color_dark;
   padding: 2rem;
   color: $color_white;
+  font-size: 1.4rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.8rem;
+  }
 
   &__content {
-    width: 100%;
     margin: auto;
     padding: 0 2rem;
 

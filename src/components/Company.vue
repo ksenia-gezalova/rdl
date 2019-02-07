@@ -70,11 +70,21 @@ export default {
 
 .company {
   background-color: $color_white;
+  font-size: 1.4rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
   &__bg {
     background-image: url("../assets/female.jpg");
     color: $color_orange;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
+    @media (min-width: $tablet-width) {
+      background-size: cover;
+    }
   }
 
   &__banner {
@@ -85,6 +95,7 @@ export default {
     align-items: center;
     text-align: center;
     padding: 0 2rem;
+    padding-top: 8rem;
     background-color: rgba(18, 23, 36, 0.7);
 
     h2 {

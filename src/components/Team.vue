@@ -90,13 +90,18 @@ export default {
   /*background-size: cover;*/
   background: $color_dark;
   padding: 2rem 0;
+  font-size: 1.4rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.8rem;
+  }
 
   &__gallery {
     padding: 0;
     margin: 3.5rem auto;
     display: grid;
     grid-gap: 1.5rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     @media (min-width: $tablet-width) {
       padding: 0 2rem;
       grid-template-columns: repeat(5, 1fr);
@@ -106,6 +111,7 @@ export default {
   &__small-text {
     font-size: 1.4rem;
     text-shadow: 0.1rem 0.1rem 0.5rem black;
+    line-height: 2rem;
   }
 
   &__photo {
@@ -124,6 +130,7 @@ export default {
     color: $color-white;
     text-transform: uppercase;
     font-size: 1.7rem;
+    line-height: 2rem;
     text-align: center;
     opacity: 0;
     transition: all 0.5s;

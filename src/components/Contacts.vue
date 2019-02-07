@@ -91,8 +91,17 @@ export default {
 .contacts {
   background-image: url("../assets/contact.jpg");
   color: $color_orange;
-  background-size: cover;
-  background-position: top center;
+  background-size: contain;
+  background-position: 0px 150px;
+  background-repeat: no-repeat;
+  font-size: 1.4rem;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+    background-position: center;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
 
   &__banner {
     display: flex;
@@ -134,13 +143,13 @@ export default {
     color: $color_dark;
     padding: 5rem;
     line-height: 2.3rem;
-    width: 100%;
     margin: 0 auto;
     background-color: $color_white;
 
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 5rem;
     }
   }
 

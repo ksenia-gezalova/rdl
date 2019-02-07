@@ -39,9 +39,14 @@ export default {
   padding-bottom: 5rem;
   background: $color_dark;
   color: $color_white;
+  font-size: 1.4rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.8rem;
+  }
+
   p {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.8rem;
     line-height: 2.5rem;
     letter-spacing: 0.5px;
     margin: auto;

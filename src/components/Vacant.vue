@@ -4,15 +4,18 @@
       <h2>РДЛ-Телеком &mdash; твой шанс делать по-настоящему уникальные и важные вещи в сфере IT</h2>
       <p>Мы первые в мире реализовали и внедрили оффлайн систему авторизации по номеру билета пассажира</p>
       <div class="vacant__holder">
-        <a href="#vacancy" class="vacant__btn">наши вакансии</a>
-        <a href="mailto:test@example.com" class="vacant__btn">отправить резюме</a>
+        <a href="#vacancy" class="vacant__btn">наши&nbsp;вакансии</a>
+        <a href="mailto:info@rdl-telecom.com" class="vacant__btn">отправить резюме</a>
       </div>
     </div>
     <div class="vacant__block" id="vacancy">
       <h1>Наши вакансии</h1>
       <div v-if="items.length == 0">
         <p>На данный момент у нас нет открытых вакансий, но Вы можете выслать нам свое резюме и мы свяжемся с Вами, когда у нас появится что-то подходящее для Вас.</p>
-        <a class="vacant__btn vacant__btn--orange" href="mailto:test@example.com">отправить резюме</a>
+        <a
+          class="vacant__btn vacant__btn--orange"
+          href="mailto:info@rdl-telecom.com"
+        >отправить резюме</a>
         <img class="vacant__img" src="../assets/mirage.png" alt>
       </div>
 
@@ -50,7 +53,7 @@
               v-if="item.link"
               :href="item.link"
               target="_blank"
-            >Посмотреть на HeadHunter</a>
+            >Посмотреть&nbsp;на&nbsp;HeadHunter</a>
           </div>
         </div>
       </div>
@@ -121,6 +124,12 @@ export default {
   background-image: url("../assets/photo.jpg");
   background-size: cover;
   background-position: top center;
+  font-size: 1.4rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
 
   &__show {
     position: relative;
@@ -145,6 +154,7 @@ export default {
     align-items: center;
     text-align: center;
     padding: 0 2rem;
+    padding-top: 8rem;
     background-color: rgba(18, 23, 36, 0.75);
 
     h2 {

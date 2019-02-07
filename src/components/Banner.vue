@@ -146,6 +146,7 @@ export default {
   }
 
   &__text {
+    overflow: hidden;
     font-family: "Roboto Mono", monospace;
     position: absolute;
     top: 45%;
@@ -157,18 +158,21 @@ export default {
     letter-spacing: 1px;
     font-size: 5rem;
     width: 30rem;
+    //width: max-content;
     font-size: 2rem;
-    //    background-color: rgba(18, 23, 36, 0.4);
     background-color: rgba(255, 255, 255, 0.2);
     padding: 3rem;
+    line-height: 3rem;
 
     @media (min-width: $tablet-width) {
       width: max-content;
+      //width: 50rem;
+      font-size: 3rem;
     }
 
     @media (min-width: $desktop-width) {
       top: 50%;
-      font-size: 6rem;
+      font-size: 4rem;
     }
   }
 }

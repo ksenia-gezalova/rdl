@@ -80,6 +80,10 @@ export default {
   z-index: 5000;
   position: fixed;
   width: 100%;
+  min-width: 320px;
+  max-width: 1900px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     height: auto;
   }

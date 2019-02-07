@@ -35,7 +35,6 @@ export default {
         new Partner("logos/cppk.jpg", false),
         new Partner("logos/disney.png", false),
         new Partner("logos/fpc.jpg", false),
-        new Partner("logos/icomera.png", false),
         new Partner("logos/megafon.png", false),
         new Partner("logos/mts.png", false),
         new Partner("logos/mtx.png", false),
@@ -63,20 +62,25 @@ export default {
 
 .partner {
   padding: 3rem 0;
+  font-size: 1.4rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.8rem;
+  }
   &__title {
     color: $color_dark;
     margin-bottom: 2rem;
   }
   &__img {
     display: block;
-    max-width: 12rem;
+    max-width: 6rem;
     padding: 1rem;
     @media (min-width: $tablet-width) {
       padding: 5rem;
-      max-width: 20rem;
+      max-width: 8rem;
     }
     @media (min-width: $desktop-width) {
-      max-width: 20rem;
+      max-width: 10rem;
       padding: 5rem;
     }
     &--white {

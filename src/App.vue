@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <router-view></router-view>
-    <Footer></Footer>
+    <div class="container">
+      <Header></Header>
+      <router-view></router-view>
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 
@@ -34,5 +36,15 @@ export default {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+.container {
+  overflow: hidden;
 }
 </style>

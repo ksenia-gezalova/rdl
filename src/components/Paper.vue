@@ -3,55 +3,55 @@
     <h1 class="paper__title">Лицензии и сертификаты</h1>
     <carousel-3d :autoplay="true" :autoplay-timeout="2400" style="height: 75vh !important;">
       <slide :index="0" class="paper__slide">
-        <img src="license/1.jpg" v-on:dblclick="showBig()">
+        <img src="license/1.jpg">
       </slide>
       <slide :index="1" class="paper__slide">
-        <img src="license/2.jpg" v-on:dblclick="showBig()">
+        <img src="license/2.jpg">
       </slide>
       <slide :index="2" class="paper__slide">
-        <img src="license/3.jpg" v-on:dblclick="showBig()">
+        <img src="license/3.jpg">
       </slide>
       <slide :index="3" class="paper__slide">
-        <img src="license/4.jpg" v-on:dblclick="showBig()">
+        <img src="license/4.jpg">
       </slide>
       <slide :index="4" class="paper__slide">
-        <img src="license/5.jpg" v-on:dblclick="showBig()">
+        <img src="license/5.jpg">
       </slide>
       <slide :index="5" class="paper__slide">
-        <img src="license/6.jpg" v-on:dblclick="showBig()">
+        <img src="license/6.jpg">
       </slide>
       <slide :index="6" class="paper__slide">
-        <img src="license/7.jpg" v-on:dblclick="showBig()">
+        <img src="license/7.jpg">
       </slide>
       <slide :index="7" class="paper__slide">
-        <img src="license/8.jpg" v-on:dblclick="showBig()">
+        <img src="license/8.jpg">
       </slide>
       <slide :index="8" class="paper__slide">
-        <img src="license/9.jpg" v-on:dblclick="showBig()">
+        <img src="license/9.jpg">
       </slide>
       <slide :index="9" class="paper__slide">
-        <img src="license/10.jpg" v-on:dblclick="showBig()">
+        <img src="license/10.jpg">
       </slide>
       <slide :index="10" class="paper__slide">
-        <img src="license/11.jpg" v-on:dblclick="showBig()">
+        <img src="license/11.jpg">
       </slide>
       <slide :index="11" class="paper__slide">
-        <img src="license/12.jpg" v-on:dblclick="showBig()">
+        <img src="license/12.jpg">
       </slide>
       <slide :index="12" class="paper__slide">
-        <img src="license/13.jpg" v-on:dblclick="showBig()">
+        <img src="license/13.jpg">
       </slide>
       <slide :index="13" class="paper__slide">
-        <img src="license/14.jpg" v-on:dblclick="showBig()">
+        <img src="license/14.jpg">
       </slide>
       <slide :index="14" class="paper__slide">
-        <img src="license/15.jpg" v-on:dblclick="showBig()">
+        <img src="license/15.jpg">
       </slide>
       <slide :index="15" class="paper__slide">
-        <img src="license/16.jpg" v-on:dblclick="showBig()">
+        <img src="license/16.jpg">
       </slide>
       <slide :index="16" class="paper__slide">
-        <img src="license/17.jpg" v-on:dblclick="showBig()">
+        <img src="license/17.jpg">
       </slide>
     </carousel-3d>
     <div class="paper__block">
@@ -80,11 +80,7 @@ export default {
     Carousel3d,
     Slide
   },
-  methods: {
-    showBig() {
-      console.log("hello");
-    }
-  }
+  methods: {}
 };
 </script>
 
@@ -94,6 +90,11 @@ export default {
 .paper {
   padding: 0 2rem;
   padding-bottom: 1rem;
+  font-size: 1.4rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 1.8rem;
+  }
   &__title {
     color: $color_dark;
   }
