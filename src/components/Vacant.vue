@@ -4,7 +4,7 @@
       <h2>РДЛ-Телеком &mdash; твой шанс делать по-настоящему уникальные и важные вещи в сфере IT</h2>
       <p>Мы первые в мире реализовали и внедрили оффлайн систему авторизации по номеру билета пассажира</p>
       <div class="vacant__holder">
-        <a href="#vacancy" class="vacant__btn">наши&nbsp;вакансии</a>
+        <a href="#vacancy" class="vacant__btn">вакансии</a>
         <a href="mailto:info@rdl-telecom.com" class="vacant__btn">отправить резюме</a>
       </div>
     </div>
@@ -53,7 +53,7 @@
               v-if="item.link"
               :href="item.link"
               target="_blank"
-            >Посмотреть&nbsp;на&nbsp;HeadHunter</a>
+            >HeadHunter</a>
           </div>
         </div>
       </div>

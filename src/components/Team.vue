@@ -50,7 +50,7 @@ export default {
         ),
         new Card(
           "Юрий Лаврухин",
-          "photos/IMG_6072.jpg",
+          "photos/IMG_6071.jpg",
           "Директор по продажам"
         ),
         new Card("Вадим Степанов", "photos/IMG_6243.jpg", "Директор проектов"),

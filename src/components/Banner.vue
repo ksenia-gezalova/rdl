@@ -9,7 +9,7 @@
           loop
           poster="../../public/moment.jpg"
         >
-          <source src="main.mp4" type="video/mp4">
+          <source src="main-small.mp4" type="video/mp4">
           <source src="main-small.webm" type="video/webm">Your browser is not supported!
         </video>
         <video class="banner__bg-video-content banner__bg-video-content--big" autoplay muted loop>
