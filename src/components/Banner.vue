@@ -3,18 +3,37 @@
     <article class="banner__block">
       <div class="banner__bg-video">
         <video
-          class="banner__bg-video-content banner__bg-video-content--small"
+          id="vid"
+          class="banner__bg-video-content banner__bg-video-content--big"
+          frameborder="0"
+          allowfullscreen
+          autobuffer
+          preload="auto"
           autoplay
           muted
           loop
+          playsinline
           poster="../../public/moment.jpg"
         >
-          <source src="main-small.mp4" type="video/mp4">
-          <source src="main-small.webm" type="video/webm">Your browser is not supported!
+          <source src="m.webm" type="video/webm">
+          <source src="m.mp4" type="video/mp4">Your browser is not supported!
         </video>
-        <video class="banner__bg-video-content banner__bg-video-content--big" autoplay muted loop>
-          <source src="main.mp4" type="video/mp4" media="(min-width: 768px)">
-          <source src="main.webm" type="video/webm">Your browser is not supported!
+        
+        <video
+          id="vid"
+          class="banner__bg-video-content banner__bg-video-content--small"
+          frameborder="0"
+          allowfullscreen
+          autobuffer
+          preload="auto"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="../../public/moment.jpg"
+        >
+          <source src="m.webm" type="video/webm">
+          <source src="m.mp4" type="video/mp4">Your browser is not supported!
         </video>
       </div>
       <div class="banner__text">IT решения для транспорта</div>
@@ -105,6 +124,15 @@ export default {
 
       next();
     }, 500);
+
+    setTimeout(this.play, 1000);
+  },
+  methods: {
+    play() {
+      const video = document.getElementById("vid");
+      video.muted = true;
+      video.play();
+    }
   }
 };
 </script>
@@ -116,6 +144,7 @@ export default {
     background-color: $color_dark;
     background-image: url("../../public/moment.jpg");
     background-size: cover;
+    background-position: center;
     position: relative;
     top: 5rem;
     left: 0;

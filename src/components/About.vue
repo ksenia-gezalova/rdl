@@ -56,7 +56,8 @@ export default {
 
   &__section {
     width: 95%;
-    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: 2rem;
     padding: 2rem;
     border-radius: 0.5rem;
@@ -70,6 +71,7 @@ export default {
     justify-content: center;
     grid-gap: 5rem;
     text-align: center;
+    padding: 0 9rem;
 
     @media (min-width: $tablet-width) {
       text-align: left;
@@ -91,7 +93,7 @@ export default {
       width: 5rem;
       height: 5rem;
       flex-shrink: 0;
-      margin-right: 1.2rem;
+      margin-right: 4.2rem;
       background-repeat: no-repeat;
       filter: invert(80%);
     }
